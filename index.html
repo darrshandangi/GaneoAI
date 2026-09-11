@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganeo AI — Websites That Match Your Expertise</title>
+    <meta name="description" content="Ganeo AI turns your decade of expertise into a website that looks like it — and a follow-up system that makes sure bookings come to you.">
+    <meta property="og:title" content="Ganeo AI — Websites That Match Your Expertise">
+    <meta property="og:description" content="We turn your ten years of expertise into a website that looks like it.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=18">
+    <script src="script.js?v=10" defer></script>
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <span class="logo-mark">G</span>
+                <span class="logo-text">Ganeo<span class="logo-ai">AI</span></span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#services">Services</a>
+                <a href="#proof">Results</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <a href="#booking" class="nav-cta" id="nav-cta">
+                <span>Book a Call</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-noise"></div>
+        <div class="hero-gradient-orb hero-orb-1"></div>
+        <div class="hero-gradient-orb hero-orb-2"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>For experts who deserve better</span>
+                    </div>
+                    <h1 class="hero-title">
+                        You trained a decade.<br>
+                        <em class="hero-italic">They spent an afternoon.</em><br>
+                        They're getting your bookings.
+                    </h1>
+                    <p class="hero-offer">We turn your expertise into a website that builds Credibility — and a follow-up system that makes sure bookings come to you.</p>
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn-primary" id="hero-cta">
+                            <span>Claim Your Free Strategy Call</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <p class="hero-note">Free · No obligation · 30 min</p>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-browser">
+                        <div class="browser-topbar">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">www.smm-medspa.com</div>
+                        </div>
+                        <div class="browser-body">
+                            <div class="browser-before">
+                                <div class="before-label">Before Ganeo</div>
+                                <div class="before-image-wrapper">
+                                    <img src="assets/terrible-website.png" alt="Generic Website Example">
+                                </div>
+                                <div class="before-metrics">
+                                    <div class="metric">
+                                        <span class="metric-num negative-metric">-10%</span>
+                                        <span class="metric-label">Inquiries</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-num negative-metric">No</span>
+                                        <span class="metric-label">AI Follow-Up</span>
+                                    </div>
+                                </div>
+                                <div class="before-tag">Template. Generic. Forgettable.</div>
+                            </div>
+                            <div class="browser-after">
+                                <div class="after-label">After Ganeo</div>
+                                <div class="after-video-wrapper">
+                                    <video src="assets/hero-video.mp4" autoplay loop muted playsinline></video>
+                                </div>
+                                <div class="after-glow"></div>
+                                <div class="after-metrics">
+                                    <div class="metric">
+                                        <span class="metric-num">+340%</span>
+                                        <span class="metric-label">Inquiries</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-num">24/7</span>
+                                        <span class="metric-label">AI Follow-Up</span>
+                                    </div>
+                                </div>
+                                <div class="after-tag">Custom. Strategic. Unforgettable.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="marquee-section">
+        <div class="marquee-track">
+            <span>Your expertise deserves a digital presence that matches</span>
+            <span class="marquee-dot">◆</span>
+            <span>Stop losing high-value bookings to amateur websites</span>
+            <span class="marquee-dot">◆</span>
+            <span>Turn your decade of experience into an unfair advantage</span>
+            <span class="marquee-dot">◆</span>
+            <span>Your expertise deserves a digital presence that matches</span>
+            <span class="marquee-dot">◆</span>
+            <span>Stop losing high-value bookings to amateur websites</span>
+            <span class="marquee-dot">◆</span>
+            <span>Turn your decade of experience into an unfair advantage</span>
+            <span class="marquee-dot">◆</span>
+        </div>
+    </section>
+
+    <!-- Problem/Contrast Section -->
+    <section class="contrast-section" id="contrast">
+        <div class="container">
+            <div class="contrast-grid">
+                <div class="contrast-card contrast-them">
+                    <div class="contrast-tag">What they have</div>
+                    <h3 class="contrast-heading">A template.<br>No strategy.<br>An afternoon's work.</h3>
+                    <div class="contrast-details">
+                        <div class="contrast-line">
+                            <span class="line-x">✕</span>
+                            <span>Generic template from a page builder</span>
+                        </div>
+                        <div class="contrast-line">
+                            <span class="line-x">✕</span>
+                            <span>No conversion strategy</span>
+                        </div>
+                        <div class="contrast-line">
+                            <span class="line-x">✕</span>
+                            <span>No follow-up system</span>
+                        </div>
+                        <div class="contrast-line">
+                            <span class="line-x">✕</span>
+                            <span>Looks "fine" but doesn't sell</span>
+                        </div>
+                    </div>
+                    <div class="contrast-result">
+                        <span>Result:</span> Getting bookings they don't deserve.
+                    </div>
+                </div>
+                <div class="contrast-vs">
+                    <span>vs</span>
+                </div>
+                <div class="contrast-card contrast-you">
+                    <div class="contrast-tag contrast-tag-good">What you'll have</div>
+                    <h3 class="contrast-heading">A weapon.<br>Built to convert.<br>Backed by a decade.</h3>
+                    <div class="contrast-details">
+                        <div class="contrast-line">
+                            <span class="line-check">✓</span>
+                            <span>Custom-designed for your expertise</span>
+                        </div>
+                        <div class="contrast-line">
+                            <span class="line-check">✓</span>
+                            <span>Conversion-engineered layout</span>
+                        </div>
+                        <div class="contrast-line">
+                            <span class="line-check">✓</span>
+                            <span>Automated follow-up system</span>
+                        </div>
+                        <div class="contrast-line">
+                            <span class="line-check">✓</span>
+                            <span>Looks premium — because you are</span>
+                        </div>
+                    </div>
+                    <div class="contrast-result contrast-result-good">
+                        <span>Result:</span> Bookings come to you. Where they belong.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Websites / Portfolio -->
+    <section class="portfolio-section" id="work">
+        <div class="container">
+            <div class="section-label">Our Work</div>
+            <h2 class="section-heading">Websites that <em>command respect.</em></h2>
+            <div class="portfolio-grid">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-item reveal">
+                    <div class="portfolio-video-wrapper">
+                        <video autoplay loop muted playsinline class="portfolio-video">
+                            <source src="assets/demo1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Luxury Real Estate</h3>
+                        <p>High-end property agency</p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-item reveal">
+                    <div class="portfolio-video-wrapper">
+                        <video autoplay loop muted playsinline class="portfolio-video">
+                            <source src="assets/demo2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Aesthetic Clinic</h3>
+                        <p>Premium medical spa</p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="portfolio-item reveal">
+                    <div class="portfolio-video-wrapper">
+                        <video autoplay loop muted playsinline class="portfolio-video">
+                            <source src="assets/demo3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Premium Product</h3>
+                        <p>Ecommerce Store</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-label">What we build</div>
+            <h2 class="section-heading">Everything you need to<br><em>look the part and book the part.</em></h2>
+            <div class="services-grid">
+                <div class="service-card" id="service-1">
+                    <div class="service-num">01</div>
+                    <h3>Premium Website Design</h3>
+                    <p>Custom-built from scratch. Not a template with your logo pasted on. Every pixel reflects the quality of your work.</p>
+                </div>
+                <div class="service-card" id="service-2">
+                    <div class="service-num">02</div>
+                    <h3>AI-Powered Follow-Up</h3>
+                    <p>Smart chatbots and email sequences that nurture leads while you focus on what you do best — your craft.</p>
+                </div>
+                <div class="service-card" id="service-3">
+                    <div class="service-num">03</div>
+                    <h3>Conversion Architecture</h3>
+                    <p>Every section, every button, every word is placed with one goal: turning visitors into booked clients.</p>
+                </div>
+                <div class="service-card" id="service-4">
+                    <div class="service-num">04</div>
+                    <h3>Speed & SEO</h3>
+                    <p>Lightning-fast load times and search dominance. Get found first, load first, booked first.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Impression -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-block">
+                    <div class="stat-number" data-count="94">0</div>
+                    <div class="stat-unit">%</div>
+                    <p>of first impressions are design-related</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-block">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-unit">sec</div>
+                    <p>to form an opinion about your business</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-block">
+                    <div class="stat-number" data-count="75">0</div>
+                    <div class="stat-unit">%</div>
+                    <p>judge your credibility by your website</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials -->
+    <section class="video-testimonials-section" id="video-proof">
+        <div class="container">
+            <div class="section-label">Real Results</div>
+            <h2 class="section-heading">Hear from our clients.</h2>
+            <div class="video-testimonials-grid">
+                <div class="video-testimonial-card reveal">
+                    <div class="video-placeholder">
+                        <span class="placeholder-text">Video Testimonial 1</span>
+                    </div>
+                </div>
+                <div class="video-testimonial-card reveal">
+                    <div class="video-placeholder">
+                        <span class="placeholder-text">Video Testimonial 2</span>
+                    </div>
+                </div>
+                <div class="video-testimonial-card reveal">
+                    <div class="video-placeholder">
+                        <span class="placeholder-text">Video Testimonial 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big CTA -->
+    <section class="big-cta-section" id="big-cta">
+        <div class="container">
+            <div class="big-cta-content">
+                <p class="big-cta-label">The truth is simple</p>
+                <h2 class="big-cta-heading">You're not spending money.<br>You're finally <em>catching the money</em><br>you were already losing.</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" id="proof">
+        <div class="container">
+            <div class="section-label">Proof</div>
+            <h2 class="section-heading">What our clients say.</h2>
+            <div class="testimonials-marquee-wrapper">
+                <div class="testimonials-marquee-track">
+                    <!-- Original Set -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">Ganeo AI rebuilt our med spa website from scratch. Our bounce rate plummeted and we saw a 400% increase in consultation bookings within the first month. Incredible ROI.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MC</div>
+                            <div>
+                                <div class="author-name">Dr. Michael Chen</div>
+                                <div class="author-role">Founder, Lumina Aesthetics</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">Before Ganeo, we lost high-end clients because our site looked like a cheap template. Now, our digital presence commands the premium prices we charge. The AI follow-up is the cherry on top.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">ER</div>
+                            <div>
+                                <div class="author-name">Elena Rodriguez</div>
+                                <div class="author-role">Managing Partner, Elite Law Group</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">The transition was seamless. We went from relying heavily on paid ads to generating consistent, organic high-ticket leads. Their conversion-engineered layouts really work.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MT</div>
+                            <div>
+                                <div class="author-name">Marcus Thorne</div>
+                                <div class="author-role">CEO, Thorne Financial</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">I've hired three different web agencies in the past. Ganeo AI is the only one that actually understood how to turn traffic into paying clients. The automated follow-ups save us 10 hours a week.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SJ</div>
+                            <div>
+                                <div class="author-name">Sarah Jenkins</div>
+                                <div class="author-role">Director, Pearl Real Estate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">Stop wasting time on generic site builders. Ganeo gave us a completely custom, premium platform that instantly builds trust with our patients. Best investment we made this year.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JA</div>
+                            <div>
+                                <div class="author-name">Dr. James Albright</div>
+                                <div class="author-role">Albright Dental</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated Set for Loop -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">Ganeo AI rebuilt our med spa website from scratch. Our bounce rate plummeted and we saw a 400% increase in consultation bookings within the first month. Incredible ROI.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MC</div>
+                            <div>
+                                <div class="author-name">Dr. Michael Chen</div>
+                                <div class="author-role">Founder, Lumina Aesthetics</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">Before Ganeo, we lost high-end clients because our site looked like a cheap template. Now, our digital presence commands the premium prices we charge. The AI follow-up is the cherry on top.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">ER</div>
+                            <div>
+                                <div class="author-name">Elena Rodriguez</div>
+                                <div class="author-role">Managing Partner, Elite Law Group</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">The transition was seamless. We went from relying heavily on paid ads to generating consistent, organic high-ticket leads. Their conversion-engineered layouts really work.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MT</div>
+                            <div>
+                                <div class="author-name">Marcus Thorne</div>
+                                <div class="author-role">CEO, Thorne Financial</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">I've hired three different web agencies in the past. Ganeo AI is the only one that actually understood how to turn traffic into paying clients. The automated follow-ups save us 10 hours a week.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SJ</div>
+                            <div>
+                                <div class="author-name">Sarah Jenkins</div>
+                                <div class="author-role">Director, Pearl Real Estate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">"</div>
+                        <p class="testimonial-text">Stop wasting time on generic site builders. Ganeo gave us a completely custom, premium platform that instantly builds trust with our patients. Best investment we made this year.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JA</div>
+                            <div>
+                                <div class="author-name">Dr. James Albright</div>
+                                <div class="author-role">Albright Dental</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-info">
+                    <div class="section-label">Let's talk</div>
+                    <h2 class="booking-heading">Book a free<br><em>strategy call.</em></h2>
+                    <p class="booking-desc">30 minutes. No pitch. Just an honest conversation about where your digital presence stands — and where it could be.</p>
+                    <div class="booking-checks">
+                        <div class="booking-check">
+                            <span class="check-icon">✓</span>
+                            <span>Free 30-minute strategy session</span>
+                        </div>
+                        <div class="booking-check">
+                            <span class="check-icon">✓</span>
+                            <span>Custom growth roadmap</span>
+                        </div>
+                        <div class="booking-check">
+                            <span class="check-icon">✓</span>
+                            <span>No obligations whatsoever</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form-card">
+                    <form class="booking-form" id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="jane@practice.com" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile No.</label>
+                            <input type="tel" id="mobile" name="mobile" placeholder="1234567890" pattern="[0-9]{10}" maxlength="10" title="Please enter exactly 10 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Website Url {If any}</label>
+                            <input type="text" id="website" name="website" placeholder="www.yourpractice.com">
+                        </div>
+                        <button type="submit" class="btn-primary form-submit" id="form-submit">
+                            <span>Book My Free Call</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-heading">Common questions.</h2>
+            <div class="faq-list">
+                <details class="faq-item" id="faq-1">
+                    <summary>
+                        <span>How long does it take to build a website?</span>
+                        <span class="faq-toggle"></span>
+                    </summary>
+                    <div class="faq-answer"><p>Typically 2–4 weeks depending on scope. Starter delivers in 2 weeks, Growth in 3, and Enterprise is scoped individually. We prioritize quality — but we're fast too.</p></div>
+                </details>
+                <details class="faq-item" id="faq-2">
+                    <summary>
+                        <span>What makes Ganeo AI different from other agencies?</span>
+                        <span class="faq-toggle"></span>
+                    </summary>
+                    <div class="faq-answer"><p>We don't just build websites — we build conversion machines backed by AI. Every design decision is data-driven. Your site works for you 24/7, engaging visitors and capturing leads while you sleep.</p></div>
+                </details>
+                <details class="faq-item" id="faq-3">
+                    <summary>
+                        <span>Do you offer ongoing support after launch?</span>
+                        <span class="faq-toggle"></span>
+                    </summary>
+                    <div class="faq-answer"><p>Absolutely. All packages include 30 days of post-launch support. Enterprise includes ongoing optimization, A/B testing, and priority support.</p></div>
+                </details>
+                <details class="faq-item" id="faq-4">
+                    <summary>
+                        <span>Can you work with my existing brand?</span>
+                        <span class="faq-toggle"></span>
+                    </summary>
+                    <div class="faq-answer"><p>Yes. We honor your existing brand identity while elevating it for the digital space. No brand guidelines yet? We can create them as part of the project.</p></div>
+                </details>
+                <details class="faq-item" id="faq-5">
+                    <summary>
+                        <span>What if I'm not satisfied with the design?</span>
+                        <span class="faq-toggle"></span>
+                    </summary>
+                    <div class="faq-answer"><p>Each package includes revision rounds. We share progress at every stage — no surprises. Your satisfaction is non-negotiable.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-mark">G</span>
+                        <span class="logo-text">Ganeo<span class="logo-ai">AI</span></span>
+                    </a>
+                    <p>Websites that match your expertise.<br>Follow-up systems that fill your calendar.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#services">Services</a>
+                    <a href="#proof">Results</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Case Studies</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="#">Twitter / X</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Ganeo AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
