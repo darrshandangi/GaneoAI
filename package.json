@@ -1,0 +1,12 @@
+{
+  "name": "ganeo-ai-website",
+  "version": "1.0.0",
+  "description": "Ganeo AI landing page",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "Darrshan Dangi",
+  "license": "ISC"
+}
