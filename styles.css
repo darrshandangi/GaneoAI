@@ -257,13 +257,13 @@ ul, ol { list-style: none; }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.15fr 1fr;
     gap: 60px;
     align-items: center;
 }
 
 .hero-content {
-    max-width: 560px;
+    max-width: 680px;
 }
 
 .hero-eyebrow {
