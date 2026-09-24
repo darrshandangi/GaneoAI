@@ -85,8 +85,50 @@
             max-width: 1000px;
             margin: 0 auto;
             flex: 1;
+            position: relative;
+        }
+
+        .calendly-skeleton {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            z-index: 10;
+            transition: opacity 0.5s ease;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(201, 168, 76, 0.2);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .skeleton-text {
+            color: var(--text-muted);
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
         }
     </style>
+    <link rel="preload" href="https://assets.calendly.com/assets/external/widget.js" as="script">
 </head>
 <body class="appointment-page">
 
@@ -102,11 +144,27 @@
     </div>
 
     <div class="calendly-wrapper">
+        <div class="calendly-skeleton" id="calendly-loader">
+            <div class="spinner"></div>
+            <div class="skeleton-text">Loading Calendar...</div>
+        </div>
         <!-- Calendly inline widget begin -->
         <div class="calendly-inline-widget" data-url="https://calendly.com/darrshandangi/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=111115&text_color=ffffff&primary_color=c9a84c" style="min-width:320px;height:700px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         <!-- Calendly inline widget end -->
     </div>
 
+    <script>
+        // Hide the loader exactly when Calendly finishes rendering its UI
+        window.addEventListener('message', function(e) {
+            if (e.data.event && e.data.event === 'calendly.event_type_viewed') {
+                const loader = document.getElementById('calendly-loader');
+                if(loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            }
+        });
+    </script>
 </body>
 </html>
