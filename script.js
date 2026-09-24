@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Redirect almost instantly (300ms gives enough time for the user to see the button click)
             setTimeout(() => {
-                window.location.href = "https://calendly.com/darrshandangi/30min";
+                window.location.href = "appointment.html";
                 
                 // Reset button state in case they hit the back button
                 setTimeout(() => {

@@ -4,10 +4,7 @@
   "description": "Ganeo AI landing page",
   "main": "index.html",
   "scripts": {
-    "start": "serve -p ${PORT:-8080} ."
-  },
-  "dependencies": {
-    "serve": "^14.2.1"
+    "start": "npx serve ."
   },
   "keywords": [],
   "author": "Darrshan Dangi",
