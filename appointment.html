@@ -30,19 +30,21 @@
         .progress-bar {
             height: 100%;
             width: 75%;
-            background: linear-gradient(90deg, #9d4edd, #ff7900); /* Similar to the image gradient */
+            background: linear-gradient(90deg, var(--accent), #e4cb7a);
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 0 15px rgba(201, 168, 76, 0.3);
+            transition: width 0.5s ease;
         }
 
         .progress-text {
-            color: #fff;
+            color: #000;
             font-family: var(--sans);
             font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
             white-space: nowrap;
         }
 
