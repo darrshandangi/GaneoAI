@@ -283,7 +283,7 @@
             </div>
             <div class="input-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="Phone" required placeholder="(555) 123-4567">
+                <input type="tel" id="phone" name="Phone" required placeholder="(555) 123-4567" oninput="this.value = this.value.replace(/[^0-9\s\+\-\(\)]/g, '')">
             </div>
             <button type="submit" class="btn-primary" id="submit-btn">Book a Call Now ➔</button>
         </form>
