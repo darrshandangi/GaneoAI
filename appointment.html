@@ -229,6 +229,69 @@
             transform: translateY(2px);
         }
 
+        /* --- Testimonials --- */
+        .mini-testimonials {
+            max-width: 800px;
+            margin: 0 auto 60px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .mini-testimonial-card {
+            background: rgba(17, 17, 21, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: left;
+        }
+
+        .mini-testimonial-card p {
+            color: #d1d5db;
+            font-size: 0.95rem;
+            font-style: italic;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .mini-testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .mini-testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(201, 168, 76, 0.1);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--sans);
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: 1px solid rgba(201, 168, 76, 0.3);
+        }
+
+        .mini-testimonial-info strong {
+            display: block;
+            color: #fff;
+            font-size: 0.95rem;
+            font-family: var(--sans);
+            font-weight: 600;
+        }
+
+        .mini-testimonial-info span {
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-family: var(--sans);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+
         /* --- Mobile Responsive Fixes --- */
         @media (max-width: 768px) {
             .appointment-subtitle {
@@ -256,6 +319,12 @@
             .appointment-form {
                 padding: 24px;
                 border-radius: 12px;
+                margin-bottom: 30px;
+            }
+
+            .mini-testimonials {
+                grid-template-columns: 1fr;
+                padding: 0 15px;
             }
 
             .progress-container {
@@ -331,6 +400,29 @@
             </div>
             <button type="submit" class="btn-primary" id="submit-btn">Book a Call Now ➔</button>
         </form>
+
+        <div class="mini-testimonials">
+            <div class="mini-testimonial-card">
+                <p>"Before this, I was up until midnight answering DMs. Within a week, I woke up to 3 new bookings while I was asleep. My phone is finally quiet."</p>
+                <div class="mini-testimonial-author">
+                    <div class="mini-testimonial-avatar">E</div>
+                    <div class="mini-testimonial-info">
+                        <strong>Emily R.</strong>
+                        <span>Clinic Owner</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mini-testimonial-card">
+                <p>"I was skeptical of 'AI systems' adding more work, but this just runs in the background. I finally had dinner with my kids without looking at my screen."</p>
+                <div class="mini-testimonial-author">
+                    <div class="mini-testimonial-avatar">M</div>
+                    <div class="mini-testimonial-info">
+                        <strong>Marcus T.</strong>
+                        <span>Service Business</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- STEP 2: CALENDAR (Hidden initially) -->
