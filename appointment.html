@@ -54,21 +54,26 @@
         }
 
         .appointment-title {
-            background: rgba(255,255,255,0.1);
-            color: #fff;
+            background: rgba(201, 168, 76, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(201, 168, 76, 0.3);
+            border-radius: 30px;
             font-family: var(--sans);
-            font-size: 1.25rem;
-            font-weight: 400;
-            padding: 4px 12px;
+            font-size: 1.05rem;
+            font-weight: 500;
+            padding: 6px 18px;
             display: inline-block;
-            margin-bottom: 16px;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
         }
 
         .appointment-subtitle {
             color: #fff;
             font-family: var(--sans);
-            font-size: 2.2rem;
-            font-weight: 600;
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -1px;
         }
 
         .appointment-subtitle em {
@@ -134,10 +139,12 @@
         .appointment-form {
             max-width: 500px;
             margin: 0 auto 40px auto;
-            background: rgba(255,255,255,0.03);
+            background: rgba(17, 17, 21, 0.7);
+            backdrop-filter: blur(12px);
             padding: 40px;
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: var(--radius-lg, 12px);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            border-radius: var(--radius-lg, 16px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
         }
 
         .appointment-form .input-group {
@@ -191,26 +198,33 @@
             box-shadow: 0 10px 20px rgba(201, 168, 76, 0.2);
         }
 
+        .ad-bullets-container {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
         .ad-bullets {
+            display: inline-block;
             text-align: left;
-            max-width: 600px;
-            margin: 0 auto 40px auto;
-            color: var(--text-secondary, #aaa);
+            color: #f3f4f6; /* Much brighter text */
             font-family: var(--sans);
-            line-height: 1.6;
-            font-size: 1.05rem;
+            line-height: 1.8;
+            font-size: 1.15rem;
         }
 
         .ad-bullets p {
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             display: flex;
             align-items: flex-start;
-            gap: 10px;
+            gap: 12px;
         }
 
         .ad-bullets span {
-            color: var(--positive, #4ade80);
+            color: var(--accent); /* Gold checkmarks */
             flex-shrink: 0;
+            font-size: 1.2rem;
+            transform: translateY(2px);
         }
     </style>
     
@@ -244,16 +258,18 @@
     <div id="step-1" style="width: 100%; padding: 0 20px;">
         <div class="appointment-header">
             <div class="appointment-title">Take back your evenings 👩‍👧‍👦</div>
-            <h1 class="appointment-subtitle" style="font-size: 2.8rem; margin-bottom: 20px;">Stop working 70+ hour weeks.</h1>
-            <p style="color: #ccc; font-family: var(--sans); font-size: 1.1rem; line-height: 1.6; max-width: 700px; margin: 0 auto 30px auto;">
+            <h1 class="appointment-subtitle" style="margin-bottom: 24px;">Stop working <span style="color: var(--accent);">70+ hour</span> weeks.</h1>
+            <p style="color: #e5e7eb; font-family: var(--sans); font-size: 1.2rem; line-height: 1.6; max-width: 750px; margin: 0 auto 30px auto;">
                 You didn't build a business to lose your life to it. Let's get it back. Enter your details below to see how our AI systems can reply to your leads instantly, any time of day, without you touching your phone.
             </p>
         </div>
 
-        <div class="ad-bullets">
-            <p><span>✅</span> Stop missing moments with your family because your phone won't stop.</p>
-            <p><span>✅</span> Stop losing clients simply because you couldn't reply fast enough.</p>
-            <p><span>✅</span> Make your business finally work for you, not the other way around.</p>
+        <div class="ad-bullets-container">
+            <div class="ad-bullets">
+                <p><span>✓</span> Stop missing moments with your family because your phone won't stop.</p>
+                <p><span>✓</span> Stop losing clients simply because you couldn't reply fast enough.</p>
+                <p><span>✓</span> Make your business finally work for you, not the other way around.</p>
+            </div>
         </div>
 
         <form class="appointment-form" id="lead-form">
