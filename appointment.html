@@ -283,7 +283,7 @@
             </div>
             <div class="input-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="Phone" required placeholder="(555) 123-4567" inputmode="tel" pattern="[0-9\s\+\-\(\)]*">
+                <input type="tel" id="phone" name="Phone" required placeholder="5551234567" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10">
             </div>
             <button type="submit" class="btn-primary" id="submit-btn">Book a Call Now ➔</button>
         </form>
@@ -323,19 +323,19 @@
     </div>
 
     <script>
-        // Strict phone number formatting to block letters
+        // Strict phone number formatting: exactly 10 digits, nothing else.
         const phoneInput = document.getElementById('phone');
         
         phoneInput.addEventListener('input', function(e) {
-            // Instantly strip any character that is not a number, space, plus, minus, or parenthesis
-            this.value = this.value.replace(/[^0-9\s\+\-\(\)]/g, '');
+            // Strip any non-digit character and limit to 10 characters
+            this.value = this.value.replace(/[^0-9]/g, '').substring(0, 10);
         });
         
         phoneInput.addEventListener('keypress', function(e) {
-            // Block the physical keypress of letters
+            // Block physical keypress of anything that isn't a digit
             const charCode = (e.which) ? e.which : e.keyCode;
             const charStr = String.fromCharCode(charCode);
-            if (!/[0-9\s\+\-\(\)]/.test(charStr)) {
+            if (!/[0-9]/.test(charStr)) {
                 e.preventDefault();
             }
         });
