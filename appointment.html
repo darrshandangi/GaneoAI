@@ -283,7 +283,7 @@
             </div>
             <div class="input-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="Phone" required placeholder="(555) 123-4567" oninput="this.value = this.value.replace(/[^0-9\s\+\-\(\)]/g, '')">
+                <input type="tel" id="phone" name="Phone" required placeholder="(555) 123-4567" inputmode="tel" pattern="[0-9\s\+\-\(\)]*">
             </div>
             <button type="submit" class="btn-primary" id="submit-btn">Book a Call Now ➔</button>
         </form>
@@ -323,6 +323,23 @@
     </div>
 
     <script>
+        // Strict phone number formatting to block letters
+        const phoneInput = document.getElementById('phone');
+        
+        phoneInput.addEventListener('input', function(e) {
+            // Instantly strip any character that is not a number, space, plus, minus, or parenthesis
+            this.value = this.value.replace(/[^0-9\s\+\-\(\)]/g, '');
+        });
+        
+        phoneInput.addEventListener('keypress', function(e) {
+            // Block the physical keypress of letters
+            const charCode = (e.which) ? e.which : e.keyCode;
+            const charStr = String.fromCharCode(charCode);
+            if (!/[0-9\s\+\-\(\)]/.test(charStr)) {
+                e.preventDefault();
+            }
+        });
+
         document.getElementById('lead-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submit-btn');
