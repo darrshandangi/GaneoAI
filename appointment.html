@@ -404,7 +404,23 @@
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="mobile" required placeholder="5551234567" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" minlength="10">
             </div>
-            <button type="submit" class="btn-primary" id="submit-btn">Book a Call Now ➔</button>
+
+            <!-- SMS Compliance Consent -->
+            <div class="sms-consent-group">
+                <label class="sms-checkbox-label">
+                    <input type="checkbox" id="sms-consent-appointment" name="sms_consent" value="yes">
+                    <span>Yes, I would like to receive automated text messages from Ganeo AI about website previews, booking confirmations, and project follow-ups. I understand I will receive up to 2 messages per month.</span>
+                </label>
+
+                <div class="sms-disclaimer">
+                    <p><strong>Message Frequency:</strong> You will receive up to 2 messages per month.</p>
+                    <p><strong>Standard Rates:</strong> Message and data rates may apply depending on your mobile phone service plan.</p>
+                    <p><strong>Help &amp; Stop:</strong> Reply HELP for help or STOP to cancel any time. Consent is not required to make a purchase.</p>
+                    <p>By providing your phone number and checking the box above, you agree to receive text messages from Ganeo AI under our <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.</p>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary" id="submit-btn" style="width: 100%;">Book a Call Now ➔</button>
         </form>
 
         <div class="mini-testimonials">

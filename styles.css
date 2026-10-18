@@ -1845,3 +1845,99 @@ a.portfolio-item {
 .legal-card p:last-child {
     margin-bottom: 0;
 }
+
+/* ==========================================
+   SMS COMPLIANCE CHECKBOX & DISCLAIMER
+   ========================================== */
+.sms-consent-group {
+    margin-top: 8px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.sms-checkbox-label {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.84rem !important;
+    line-height: 1.55;
+    color: var(--text-secondary) !important;
+    margin-bottom: 14px !important;
+    user-select: none;
+    font-weight: 400 !important;
+}
+
+.sms-checkbox-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px;
+    margin: 2px 0 0 0 !important;
+    padding: 0 !important;
+    border: 1px solid var(--border-hover) !important;
+    border-radius: 4px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease;
+}
+
+.sms-checkbox-label input[type="checkbox"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--accent);
+    transform-origin: center;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.sms-checkbox-label input[type="checkbox"]:checked {
+    border-color: var(--accent) !important;
+    background: rgba(201, 168, 76, 0.15) !important;
+}
+
+.sms-checkbox-label input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.sms-checkbox-label:hover input[type="checkbox"] {
+    border-color: var(--accent) !important;
+}
+
+.sms-disclaimer {
+    font-size: 0.73rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+}
+
+.sms-disclaimer p {
+    margin: 0 0 8px 0;
+}
+
+.sms-disclaimer p:last-child {
+    margin-bottom: 0;
+}
+
+.sms-disclaimer strong {
+    color: var(--text-secondary);
+}
+
+.sms-disclaimer a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.sms-disclaimer a:hover {
+    color: #e4cb7a;
+}
