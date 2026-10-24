@@ -409,14 +409,15 @@
             <div class="sms-consent-group">
                 <label class="sms-checkbox-label">
                     <input type="checkbox" id="sms-consent-appointment" name="sms_consent" value="yes">
-                    <span>Yes, I would like to receive automated text messages from Ganeo AI about website previews, booking confirmations, and project follow-ups. I understand I will receive up to 2 messages per month.</span>
+                    <span>Yes, I agree to receive marketing text messages from Ganeo AI, including website previews and promotional offers for our services, at the number I provided. Messages may be sent using automated technology. Up to 2 messages per month. Message &amp; data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase.</span>
                 </label>
 
                 <div class="sms-disclaimer">
-                    <p><strong>Message Frequency:</strong> You will receive up to 2 messages per month.</p>
+                    <p><strong>Service Scope:</strong> Website design and lead follow-up automation services.</p>
+                    <p><strong>Message Frequency:</strong> Up to 2 messages per month.</p>
                     <p><strong>Standard Rates:</strong> Message and data rates may apply depending on your mobile phone service plan.</p>
-                    <p><strong>Help &amp; Stop:</strong> Reply HELP for help or STOP to cancel any time. Consent is not required to make a purchase.</p>
-                    <p>By providing your phone number and checking the box above, you agree to receive text messages from Ganeo AI under our <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.</p>
+                    <p><strong>Help &amp; Stop:</strong> Reply HELP for help or STOP to cancel any time. Consent is not a condition of purchase.</p>
+                    <p>By providing your phone number and checking the box above, you agree to receive marketing text messages from Ganeo AI under our <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.</p>
                 </div>
             </div>
 
@@ -486,27 +487,28 @@
         Cal("init", "30min", {origin:"https://app.cal.com"});
         Cal.config = Cal.config || {};
         Cal.config.forwardQueryParams = true;
+        Cal.config.theme = "dark";
 
           Cal.ns["30min"]("inline", {
             elementOrSelector:"#my-cal-inline-30min",
-            config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+            config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"},
             calLink: "darrshandangi/30min",
           });
 
-          Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+          Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view","theme":"dark"});
           </script>
           <!-- Cal inline embed code ends -->
     </div>
     </div>
 
     <!-- Appointment Legal Footer -->
-    <div style="margin: 60px 0 40px 0; text-align: center; font-size: 0.82rem; color: var(--text-muted); font-family: var(--sans);">
-        <p style="margin-bottom: 8px;">
+    <div style="margin: 60px 0 40px 0; text-align: center; font-size: 0.82rem; color: var(--text-muted); font-family: var(--sans); max-width: 800px; padding: 0 20px;">
+        <p style="margin-bottom: 10px;">
             <a href="privacy.html" target="_blank" style="color: var(--text-secondary); text-decoration: underline; margin: 0 10px;">Privacy Policy</a>
             •
             <a href="terms.html" target="_blank" style="color: var(--text-secondary); text-decoration: underline; margin: 0 10px;">Terms & Conditions</a>
         </p>
-        <p>© 2026 Ganeo AI LLC. All rights reserved.</p>
+        <p style="line-height: 1.6;">© 2026 Ganeo AI, a sole proprietorship operated by Darshan Dangi. A-23 Agersen Colony, Azad Nagar, Ward 12, Bhilwara, Rajasthan 311001, India. Udyam Reg. No. UDYAM-RJ-07-0147812. <a href="mailto:info@ganeoai.com" style="color: inherit; text-decoration: underline;">info@ganeoai.com</a></p>
     </div>
 
     <script>
